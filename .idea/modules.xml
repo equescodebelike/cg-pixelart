@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CGVSU-main/SimpleDrawingApp2/Picturesque.iml" filepath="$PROJECT_DIR$/CGVSU-main/SimpleDrawingApp2/Picturesque.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CGVSU-main/Picturesque/Picturesque.iml" filepath="$PROJECT_DIR$/CGVSU-main/Picturesque/Picturesque.iml" />
       <module fileurl="file://$PROJECT_DIR$/CGVSU-main/SimpleDrawingApp1/SimpleDrawingApp1.iml" filepath="$PROJECT_DIR$/CGVSU-main/SimpleDrawingApp1/SimpleDrawingApp1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cg-3sem.iml" filepath="$PROJECT_DIR$/.idea/cg-3sem.iml" />
     </modules>
