@@ -11,7 +11,7 @@ public class DrawPanel extends JPanel implements ActionListener {
     private Timer timer;
     // private Timer timer2;
     private static int delta = 1;
-    private static int delta2 = 5;
+    private static int delta2 = 7;
     // private static int deltay = 1;
     private static boolean deltaflag = true;
     private static boolean deltaflag2 = true;
@@ -79,7 +79,7 @@ public class DrawPanel extends JPanel implements ActionListener {
             delta += 1;
         }
 
-        if (delta2 == 5) deltaflag2 = true;
+        if (delta2 == 7) deltaflag2 = true;
         if (delta2 == 0) deltaflag2 = false;
         if (deltaflag2) {
             delta2 -= 1;
@@ -108,8 +108,11 @@ public class DrawPanel extends JPanel implements ActionListener {
         gr.drawLine(40 + delta, 610, 240, 610);
         gr.drawRect(40 + delta, 600, 200, 60);
         gr.fillRect(30 + delta, 630, 35, 35);
+        gr.setColor(Color.lightGray);
+        gr.drawRect(30 + delta, 630, 35, 35);
 
         //Man
+        gr.setColor(Color.black);
         gr.fillRect(160 + delta, 540, 30, 60);
         gr.fillOval(160 + delta, 503, 40, 40);
         gr.fillRect(180 + delta, 547, 30, 10);

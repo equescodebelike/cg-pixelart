@@ -40,5 +40,8 @@ public class Fish {
         gr.fillRect(this.x, this.y, 30, 10);
         gr.setColor(Color.black);
         gr.fillRect(this.x, this.y, 5, 3);
+        gr.setColor(Color.lightGray);
+        gr.drawRect(this.x, this.y, 30, 10);
+        gr.drawRect(this.x, this.y, 5, 3);
     }
 }
