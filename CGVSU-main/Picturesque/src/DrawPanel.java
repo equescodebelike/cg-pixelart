@@ -36,6 +36,7 @@ public class DrawPanel extends JPanel implements ActionListener {
     private Seagull seagull;
     private Seagull seagull2;
     private Seagull seagull3;
+    private Fish fish;
 
     public DrawPanel(final int width, final int height, final int timerDelay) {
         this.PANEL_WIDTH = width;
@@ -63,6 +64,7 @@ public class DrawPanel extends JPanel implements ActionListener {
         this.seagull = new Seagull(600, 0, 0, 0, Color.white);
         this.seagull2 = new Seagull(630, 0, 0, 0, Color.white);
         this.seagull3 = new Seagull(660, 0, 0, 0, Color.white);
+        this.fish = new Fish(0, 632, 0, 0, Color.BLUE);
     }
 
     @Override
@@ -96,7 +98,7 @@ public class DrawPanel extends JPanel implements ActionListener {
         gr.setColor(Color.black);
         gr.fillRect(56 + ticksFromStart, 498, 6, 3);
         gr.fillRect(570 - ticksFromStart, 498, 7, 5);
-        gr.fillRect(136 + ticksFromStart, 498, 2, 6);
+        gr.fillRect(136 - ticksFromStart, 498, 2, 6);
         gr.fillRect(370 + ticksFromStart, 498, 10, 3);
 
         //Board
@@ -217,6 +219,9 @@ public class DrawPanel extends JPanel implements ActionListener {
 
         seagull3.setY(140 + delta2);
         seagull3.draw(gr);
+
+        fish.setX(625 + delta);
+        fish.draw(gr);
 
 
         //wave2.setX(360 + deltax);
